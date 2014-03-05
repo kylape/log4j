@@ -41,7 +41,7 @@
   <!-- prefixed with "env". -->
   <property environment="env"/>
 
-  <property name="version" value="1.2.15"/>
+  <property name="version" value="1.2.16"/>
 
   <!-- The base directory relative to which most targets are built -->
   <property name="base" value="."/>

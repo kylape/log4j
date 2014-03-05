@@ -331,6 +331,8 @@ public class OptionConverter {
 	  LogLog.error("["+superClass.getClassLoader()+"] whereas object of type ");
 	  LogLog.error("\"" +classObj.getName()+"\" was loaded by ["
 		       +classObj.getClassLoader()+"].");
+    LogLog.error("TCCL: " + Thread.currentThread().getContextClassLoader(),
+           new Exception());
 	  return defaultValue;
 	}
 	return classObj.newInstance();
